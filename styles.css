@@ -56,3 +56,26 @@ body {
 
 .form-control { background-color: var(--background-color); color: var(--text-color); padding: 5px; border: 1px solid var(--border-color); border-radius: 5px; }
 
+
+
+/* Transition for drawer panel */
+.sidebar-navigation {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mobile Breakpoints for Drawer Panel */
+@media (max-width: 768px) {
+  .sidebar-navigation {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar-navigation {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+  }
+}
