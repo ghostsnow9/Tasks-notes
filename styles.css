@@ -31,3 +31,22 @@ body {
   background-color: var(--secondary-color);
 }
 
+/* Sidebar Navigation Styles */
+.sidebar-navigation {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
