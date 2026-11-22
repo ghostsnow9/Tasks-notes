@@ -1,1 +1,32 @@
 .main-container { background-color: var(--primary-color); }
+.main-container { background-color: var(--primary-color); }
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Theme Tokens */
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --text-color: #fff;
+  --background-color: #000;
+  --border-color: #ccc;
+  --font-family: Arial, sans-serif;
+}
+
+/* Example of using a dark theme variable */
+body {
+  background-color: var(--background-color);
+}
+
+/* Bug: Incorrect selector */
+/* bug_find: .container */
+/* bug_fix: .main-container */
+.container {
+  background-color: var(--secondary-color);
+}
+
