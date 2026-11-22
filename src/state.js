@@ -29,3 +29,19 @@ function updateState(newState) {
 }
 
 export { state, loadState, updateState };
+function createTask(taskName) {
+  state.tasks.push({ name: taskName, completed: false });
+  saveState();
+}
+
+function toggleComplete(taskIndex) {
+  state.tasks[taskIndex].completed = !state.tasks[taskIndex].completed;
+  saveState();
+}
+
+function deleteTask(taskIndex) {
+  state.tasks.splice(taskIndex, 1);
+  saveState();
+}
+
+export { createTask, toggleComplete, deleteTask };
