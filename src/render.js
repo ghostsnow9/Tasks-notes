@@ -78,3 +78,20 @@ function updateLiveCounters() {
 };
 
 updateLiveCounters();
+
+
+// Render task list items and empty state markup
+if (taskItems.length === 0) {
+  const emptyState = document.createElement('div');
+  emptyState.textContent = 'No tasks to display';
+  taskList.appendChild(emptyState);
+} else {
+  taskItems.forEach(item => {
+    const taskItem = document.createElement('div');
+    taskItem.classList.add('task-item');
+    taskItem.innerHTML = `Task: ${item.title}<br>Status: ${item.status}`;
+    taskList.appendChild(taskItem);
+  });
+}
+
+
