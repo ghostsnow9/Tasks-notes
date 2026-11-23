@@ -79,3 +79,18 @@ body {
     padding: 10px;
   }
 }
+/* Focus State for Task Card */
+.task-card:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+/* Subtle Hover Transition */
+.task-card:hover {
+  background-color: var(--background-color) rgba(0, 0, 0, 0.1);
+}
+
+/* Bug: Missing null guard in sidebar-navigation transition */
+.sidebar-navigation {
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Add opacity for smooth transition */
+}
