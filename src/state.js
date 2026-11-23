@@ -46,3 +46,4 @@ function deleteTask(taskIndex) {
 
 export { createTask, toggleComplete, deleteTask };
 export { createTask, toggleComplete, deleteTask, loadState, updateState };
+export { createTask, toggleComplete, deleteTask, loadState, updateState };
