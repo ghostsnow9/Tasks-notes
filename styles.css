@@ -60,8 +60,9 @@ body {
 
 /* Transition for drawer panel */
 .sidebar-navigation {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Add opacity for smooth transition */
 }
+
 
 /* Mobile Breakpoints for Drawer Panel */
 @media (max-width: 768px) {
