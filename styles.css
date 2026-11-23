@@ -174,3 +174,61 @@ body {
   background-color: var(--background-color) rgba(0, 0, 0, 0.1);
 }
 
+
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--dark-font-family);
+  background-color: var(--dark-background-color);
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar-navigation {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-navigation li {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--dark-border-color);
+}
+
+.sidebar-navigation a {
+  text-decoration: none;
+  color: var(--dark-text-color);
+}
+
+.sidebar-navigation a:hover {
+  color: var(--dark-primary-color);
+}
+
+/* Focus State for Sidebar Navigation on Mobile Breakpoints */
+@media (max-width: 768px) {
+  .sidebar-navigation:focus {
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+}
+
+/* Subtle Hover Transition for Sidebar Navigation */
+.sidebar-navigation:hover {
+  background-color: var(--background-color) rgba(0, 0, 0, 0.1);
+}
