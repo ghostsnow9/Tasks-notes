@@ -212,3 +212,4 @@ renderApp();
 // Add event listener for form submission
 document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
 
+document.getElementById('search-input').addEventListener('input', renderApp);
