@@ -196,3 +196,4 @@ function handleFormSubmit() {
 
 // Ensure all tasks are initially displayed
 renderApp();
+document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
