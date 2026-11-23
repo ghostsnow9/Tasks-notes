@@ -119,3 +119,14 @@ document.getElementById('search-input').addEventListener('input', renderApp);
 // Ensure all tasks are initially displayed
 renderApp();
 
+document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
+
+function handleFormSubmit() {
+  const form = document.getElementById('quick-notes-form');
+  if (form) {
+    // Your form submission logic here
+    // Example: clear form fields
+    form.reset();
+  }
+}
+
