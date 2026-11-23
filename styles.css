@@ -122,3 +122,29 @@ body {
   background-color: var(--background-color) rgba(0, 0, 0, 0.1);
 }
 {"append_code": "/* Dark Theme Tokens */\n:root {\n  --dark-primary-color: #000;\n  --dark-secondary-color: #333;\n  --dark-text-color: #fff;\n  --dark-background-color: #111;\n  --dark-border-color: #555;\n  --dark-font-family: 'Roboto', sans-serif;\n}\n\n/* Focus State for Sidebar Navigation on Mobile Breakpoints */\n@media (max-width: 768px) {\n  .sidebar-navigation:focus {\n    outline: none;\n    background-color: var(--primary-color);\n    color: var(--text-color);\n  }\n}\n\n/* Subtle Hover Transition for Sidebar Navigation */\n.sidebar-navigation:hover {\n  background-color: var(--background-color) rgba(0, 0, 0, 0.1);\n}\n\n/* Dark Theme Tokens */\n:root {\n  --dark-primary-color: #000;\n  --dark-secondary-color: #333;\n  --dark-text-color: #fff;\n  --dark-background-color: #111;\n  --dark-border-color: #555;\n  --dark-font-family: 'Roboto', sans-serif;\n}\n\n/* Focus State for Sidebar Navigation on Mobile Breakpoints */\n@media (max-width: 768px) {\n  .sidebar-navigation:focus {\n    outline: none;\n    background-color: var(--primary-color);\n    color: var(--text-color);\n  }\n}\n\n/* Subtle Hover Transition for Sidebar Navigation */\n.sidebar-navigation:hover {\n  background-color: var(--background-color) rgba(0, 0, 0, 0.1);\n}\n", "bug_find": "/* Dark Theme Tokens */\n:root {\n  --dark-primary-color: #000;\n  --dark-secondary-color: #333;\n  --dark-text-color: #fff;\n  --dark-background-color: #111;\n  --dark-border-color: #555;\n  --dark-font-family: 'Roboto', sans-serif;\n}\n\n/* Focus State for Sidebar Navigation on Mobile Breakpoints */\n@media (max-width: 768px) {\n  .sidebar-navigation:focus {\n    outline: none;\n    background-color: var(--primary-color);\n    color: var(--text-color);\n  }\n}\n\n/* Subtle Hover Transition for Sidebar Navigation */\n.sidebar-navigation:hover {\n  background-color: var(--background-color) rgba(0, 0, 0, 0.1);\n}\n\n/* Dark Theme Tokens */\n:root {\n  --dark-primary-color: #000;\n  --dark-secondary-color: #333;\n  --dark-text-color: #fff;\n  --dark-background-color: #111;\n  --dark-border-color: #555;\n  --dark-font-family: 'Roboto', sans-serif;\n}\n\n/* Focus State for Sidebar Navigation on Mobile Breakpoints */\n@media (max-width: 768px) {\n
+
+
+/* Dark Theme Tokens */
+:root {
+  --dark-primary-color: #000;
+  --dark-secondary-color: #333;
+  --dark-text-color: #fff;
+  --dark-background-color: #111;
+  --dark-border-color: #555;
+  --dark-font-family: 'Roboto', sans-serif;
+}
+
+/* Focus State for Sidebar Navigation on Mobile Breakpoints */
+@media (max-width: 768px) {
+  .sidebar-navigation:focus {
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+}
+
+/* Subtle Hover Transition for Sidebar Navigation */
+.sidebar-navigation:hover {
+  background-color: var(--background-color) rgba(0, 0, 0, 0.1);
+}
+
