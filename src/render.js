@@ -117,3 +117,4 @@ function renderTaskList() {
 
 updateLiveCounters();
 renderTaskList();
+const taskList = document.getElementById('task-list');
