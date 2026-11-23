@@ -115,3 +115,21 @@ function deleteTask(taskIndex) {
 
 export { createTask, toggleComplete, deleteTask, loadState, updateState };
 
+function saveState() {
+  localStorage.setItem('tasks', JSON.stringify(state.tasks));
+}
+
+function loadState() {
+  const storedTasks = localStorage.getItem('tasks');
+  if (storedTasks) {
+    state.tasks = JSON.parse(storedTasks);
+  } else {
+    state.tasks = [];
+  }
+}
+
+function updateState() {
+  saveState();
+}
+
+export { createTask, toggleComplete, deleteTask, loadState, updateState };
