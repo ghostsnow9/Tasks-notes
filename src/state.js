@@ -86,3 +86,32 @@ function deleteTask(taskIndex) {
 }
 
 export { createTask, toggleComplete, deleteTask, loadState, updateState };
+function createTask(taskName) {
+  if (taskName.trim() !== '') {
+    state.tasks.push({ name: taskName, completed: false });
+    saveState();
+  } else {
+    console.error('Task name cannot be empty');
+  }
+}
+
+function toggleComplete(taskIndex) {
+  if (taskIndex >= 0 && taskIndex < state.tasks.length) {
+    state.tasks[taskIndex].completed = !state.tasks[taskIndex].completed;
+    saveState();
+  } else {
+    console.error('Invalid task index');
+  }
+}
+
+function deleteTask(taskIndex) {
+  if (taskIndex >= 0 && taskIndex < state.tasks.length) {
+    state.tasks.splice(taskIndex, 1);
+    saveState();
+  } else {
+    console.error('Invalid task index');
+  }
+}
+
+export { createTask, toggleComplete, deleteTask, loadState, updateState };
+
