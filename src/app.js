@@ -186,3 +186,4 @@ function handleFormSubmit() {
 
 // Ensure all tasks are initially displayed
 renderApp();
+document.getElementById('search-input').addEventListener('input', renderApp);
