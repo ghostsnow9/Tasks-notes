@@ -47,3 +47,12 @@ function deleteTask(taskIndex) {
 export { createTask, toggleComplete, deleteTask };
 export { createTask, toggleComplete, deleteTask, loadState, updateState };
 export { createTask, toggleComplete, deleteTask, loadState, updateState };
+function createTask(taskName) {
+  if (taskName.trim() !== '') {
+    state.tasks.push({ name: taskName, completed: false });
+    saveState();
+  } else {
+    console.error('Task name cannot be empty');
+  }
+}
+
