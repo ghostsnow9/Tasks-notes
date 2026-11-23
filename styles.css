@@ -106,3 +106,18 @@ body {
   --dark-border-color: #555;
   --dark-font-family: 'Roboto', sans-serif;
 }
+
+
+/* Focus State for Sidebar Navigation on Mobile Breakpoints */
+@media (max-width: 768px) {
+  .sidebar-navigation:focus {
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+}
+
+/* Subtle Hover Transition for Sidebar Navigation */
+.sidebar-navigation:hover {
+  background-color: var(--background-color) rgba(0, 0, 0, 0.1);
+}
