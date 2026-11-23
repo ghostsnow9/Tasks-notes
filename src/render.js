@@ -49,3 +49,32 @@ function updateLiveCounters() {
 
 updateLiveCounters();
 
+
+
+// Render status filter pills and live counters
+const statusFilters = ['To Do', 'In Progress', 'Completed'];
+statusFilters.forEach(filter => {
+  const pill = document.createElement('span');
+  pill.textContent = filter;
+  pill.classList.add('status-pill');
+  document.getElementById('status-filters').appendChild(pill);
+});
+
+function updateLiveCounters() {
+  const liveCounts = {
+    'To Do': 0,
+    'In Progress': 0,
+    'Completed': 0
+  };
+
+  taskItems.forEach(item => {
+    liveCounts[item.status]++;
+  });
+
+  liveCounts.forEach((count, status) => {
+    const counter = document.getElementById(`${status}-counter`);
+    counter.textContent = count;
+  });
+};
+
+updateLiveCounters();
