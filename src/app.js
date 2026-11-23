@@ -187,3 +187,12 @@ function handleFormSubmit() {
 // Ensure all tasks are initially displayed
 renderApp();
 document.getElementById('search-input').addEventListener('input', renderApp);
+function handleFormSubmit() {
+  const form = document.getElementById('quick-notes-form');
+  if (form) {
+    form.reset();
+  }
+}
+
+// Ensure all tasks are initially displayed
+renderApp();
