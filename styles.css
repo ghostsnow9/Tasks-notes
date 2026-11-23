@@ -232,3 +232,63 @@ body {
 .sidebar-navigation:hover {
   background-color: var(--background-color) rgba(0, 0, 0, 0.1);
 }
+/* Responsive Grid Layout */
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sidebar-navigation li {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .sidebar-navigation li {
+    flex: 1;
+  }
+}
+
+/* Responsive Layout for Main Content */
+
+.main-content {
+  flex: 3;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex: 1;
+  }
+}
+
+/* Responsive Layout for Footer */
+
+.footer {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex: 1;
+  }
+}
+
+/* Responsive Layout for Sidebar Navigation on Mobile Breakpoints */
+
+@media (max-width: 768px) {
+  .sidebar-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
