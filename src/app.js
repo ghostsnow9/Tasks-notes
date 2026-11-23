@@ -197,3 +197,18 @@ function handleFormSubmit() {
 // Ensure all tasks are initially displayed
 renderApp();
 document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
+
+
+function handleFormSubmit() {
+  const form = document.getElementById('quick-notes-form');
+  if (form) {
+    form.reset();
+  }
+}
+
+// Ensure all tasks are initially displayed
+renderApp();
+
+// Add event listener for form submission
+document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
+
