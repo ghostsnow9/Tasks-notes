@@ -213,3 +213,17 @@ renderApp();
 document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
 
 document.getElementById('search-input').addEventListener('input', renderApp);
+function handleFormSubmit() {
+  const form = document.getElementById('quick-notes-form');
+  if (form) {
+    form.reset();
+    renderApp();
+  }
+}
+
+// Add event listener for form submission
+document.getElementById('submit-button').addEventListener('click', handleFormSubmit);
+
+// Ensure all tasks are initially displayed
+renderApp();
+
