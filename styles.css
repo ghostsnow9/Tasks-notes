@@ -95,3 +95,14 @@ body {
 .sidebar-navigation {
   transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Add opacity for smooth transition */
 }
+
+
+/* Dark Theme Tokens */
+:root {
+  --dark-primary-color: #000;
+  --dark-secondary-color: #333;
+  --dark-text-color: #fff;
+  --dark-background-color: #111;
+  --dark-border-color: #555;
+  --dark-font-family: 'Roboto', sans-serif;
+}
